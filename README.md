@@ -1,6 +1,6 @@
 # Webhook Service
 
-A minimal Node.js service exposing a `/webhook` endpoint that accepts `multipart/form-data` POST requests containing one or more files. Each request is written to its own timestamped folder under `uploads/` and summarized in the JSON response.
+This repository contains a simple Node.js webhook with a single `/webhook` route. It accepts `multipart/form-data` POST requests (one or many files) and stores each batch inside a timestamped folder under `uploads/`, returning metadata about the saved files in the JSON response.
 
 ## Prerequisites
 
